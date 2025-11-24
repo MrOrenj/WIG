@@ -1,0 +1,68 @@
+/* Background Gradient */
+.wig-bg {
+    background: radial-gradient(circle at top, #3b3b98, #182848);
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Title */
+.wig-title {
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255,255,255,0.6);
+}
+
+/* Input */
+.wig-input {
+    max-width: 300px;
+    padding: 12px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    backdrop-filter: blur(5px);
+    transition: 0.2s;
+}
+
+.wig-input::placeholder {
+    color: #ddd;
+}
+
+/* Button */
+.wig-btn {
+    width: 200px;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: linear-gradient(135deg, #ff7676, #ff3f34);
+    box-shadow: 0 5px 15px rgba(255, 56, 56, 0.5);
+    transition: 0.2s;
+}
+
+.wig-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 56, 56, 0.7);
+}
+
+.wig-btn:active {
+    transform: scale(0.97);
+}
+
+/*
+room css
+*/
+
+.page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(255,255,255,0.4);
+}

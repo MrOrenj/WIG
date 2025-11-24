@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WIG – Room</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="wig-bg">
+
+<div class="container d-flex flex-column justify-content-center align-items-center" style="height:100vh;">
+    
+    <!-- Page Title -->
+    <h1 class="page-title mb-4">Room Setup</h1>
+
+    <!-- Display Player Name -->
+    <h4 id="playerNameDisplay" class="text-light mb-4"></h4>
+
+    <!-- Create Room Button -->
+    <button class="wig-btn mb-4" onclick="createRoom()">Create Room</button>
+
+    <!-- Room Input -->
+    <input id="joinCode"
+           class="form-control wig-input text-center mb-3"
+           placeholder="Enter room code">
+
+    <!-- Join Room -->
+    <button class="wig-btn" onclick="joinRoom()">Join Room</button>
+
+</div>
+
+<!-- Socket & JS -->
+<script src="/socket.io/socket.io.js"></script>
+<script src="game.js"></script>
+
+<script>
+    // Load saved name from home page
+    const playerName = localStorage.getItem("playerName");
+
+    if (!playerName) {
+        window.location.href = "index.html"; // redirect if no name
+    }
+
+    document.getElementById("playerNameDisplay").innerText =
+        "Player: " + playerName;
+</script>
+
+</body>
+</html>
