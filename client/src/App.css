@@ -1,8 +1,20 @@
+/* Global Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+}
+
 /* Background Gradient */
 .wig-bg {
     background: radial-gradient(circle at top, #3b3b98, #182848);
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
@@ -45,6 +57,7 @@
     background: linear-gradient(135deg, #ff7676, #ff3f34);
     box-shadow: 0 5px 15px rgba(255, 56, 56, 0.5);
     transition: 0.2s;
+    cursor: pointer;
 }
 
 .wig-btn:hover {
@@ -56,13 +69,30 @@
     transform: scale(0.97);
 }
 
-/*
-room css
-*/
-
+/* Page Title */
 .page-title {
     font-size: 42px;
     font-weight: 700;
     color: #ffffff;
     text-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+/* Word Display */
+.word-display {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.word-display.normal {
+    background-color: #51cf66;
+    color: white;
+}
+
+.word-display.spy {
+    background-color: #ff6b6b;
+    color: white;
 }
